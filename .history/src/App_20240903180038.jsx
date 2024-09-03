@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <main className="bg-gray-100 h-screen">
+    <body className="bg-gray-100 h-screen">
       <div className="max-w-md mx-auto">
         <Header />
         <TodoInput addTodo={addTodo} />
@@ -42,7 +42,7 @@ function App() {
           editTodo={editTodo}
         />
       </div>
-    </main>
+    </body>
   );
 }
 

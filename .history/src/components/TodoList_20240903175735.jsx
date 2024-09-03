@@ -9,7 +9,6 @@ function TodoList({ todos, toggleComplete, deleteTodo, editTodo }) {
             todo={todo}
             toggleComplete={toggleComplete}
             deleteTodo={deleteTodo}
-            editTodo={editTodo}
           />
         ))}
       </ul>
