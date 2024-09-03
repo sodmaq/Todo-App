@@ -12,12 +12,7 @@ function TodoItem({ todo, toggleComplete, deleteTodo }) {
         >
           {todo.text}
         </span>
-        <button
-          className="hover:text-red-500"
-          onClick={() => deleteTodo(todo.id)}
-        >
-          Delete
-        </button>
+        <button onClick={() => deleteTodo(todo.id)}>Delete</button>
       </li>
     </div>
   );

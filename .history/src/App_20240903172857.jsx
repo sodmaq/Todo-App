@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <body className="bg-gray-100 h-screen">
+    <body>
       <div className="max-w-md mx-auto">
         <Header />
         <TodoInput addTodo={addTodo} />

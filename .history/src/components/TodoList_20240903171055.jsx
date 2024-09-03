@@ -1,7 +1,7 @@
 import TodoItem from "./TodoItem";
 function TodoList({ todos, toggleComplete, deleteTodo }) {
   return (
-    <div className="max-w-md mx-auto">
+    <div>
       <ul>
         {todos.map((todo) => (
           <TodoItem

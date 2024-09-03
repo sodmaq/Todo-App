@@ -1,7 +1,7 @@
 function TodoItem({ todo, toggleComplete, deleteTodo }) {
   return (
-    <div className="">
-      <li className="bg-blue-400 flex items-center px-4 py-2  justify-between mt-4">
+    <div className="flex justify-between">
+      <li>
         <input
           type="checkbox"
           checked={todo.completed}
@@ -12,12 +12,7 @@ function TodoItem({ todo, toggleComplete, deleteTodo }) {
         >
           {todo.text}
         </span>
-        <button
-          className="hover:text-red-500"
-          onClick={() => deleteTodo(todo.id)}
-        >
-          Delete
-        </button>
+        <button onClick={() => deleteTodo(todo.id)}>Delete</button>
       </li>
     </div>
   );

@@ -25,17 +25,15 @@ function App() {
   };
 
   return (
-    <body className="bg-gray-100 h-screen">
-      <div className="max-w-md mx-auto">
-        <Header />
-        <TodoInput addTodo={addTodo} />
-        <TodoList
-          todos={todos}
-          toggleComplete={toggleComplete}
-          deleteTodo={deleteTodo}
-        />
-      </div>
-    </body>
+    <div>
+      <Header />
+      <TodoInput addTodo={addTodo} />
+      <TodoList
+        todos={todos}
+        toggleComplete={toggleComplete}
+        deleteTodo={deleteTodo}
+      />
+    </div>
   );
 }
 
