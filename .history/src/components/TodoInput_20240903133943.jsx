@@ -18,7 +18,7 @@ function TodoInput({ addTodo }) {
     <div>
       <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
         <label
-          htmlFor="default-search"
+          for="default-search"
           className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
         >
           add todo

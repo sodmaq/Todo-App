@@ -1,4 +1,5 @@
 import flowbite from "flowbite/plugin";
+import flowbiteTypography from "flowbite-typography";
 
 /** @type {import('tailwindcss').Config} */
 export default {
