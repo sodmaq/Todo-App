@@ -31,8 +31,8 @@ function App() {
   };
 
   return (
-    <main className="bg-gray-100 h-screen flex justify-center items-center">
-      <div className="max-w-md mx-auto w-full ">
+    <main className="bg-gray-100 h-screen flex">
+      <div className="max-w-md mx-auto">
         <Header />
         <TodoInput addTodo={addTodo} />
         <TodoList

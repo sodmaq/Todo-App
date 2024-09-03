@@ -32,7 +32,7 @@ function App() {
 
   return (
     <main className="bg-gray-100 h-screen flex justify-center items-center">
-      <div className="max-w-md mx-auto w-full ">
+      <div className="max-w-lg mx-auto ">
         <Header />
         <TodoInput addTodo={addTodo} />
         <TodoList
