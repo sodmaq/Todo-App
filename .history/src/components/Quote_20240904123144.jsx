@@ -4,13 +4,13 @@ function Quote() {
   const [quote, setQuote] = useState({ content: "", author: "" });
   const url = "https://api.quotable.io/random";
 
-  // Function to fetch a new quote
-  const fetchQuote = async () => {
+  const fetchQuote = async function () {
     try {
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error(response.statusText);
       }
+
       const data = await response.json();
       setQuote(data);
     } catch (error) {
@@ -18,10 +18,9 @@ function Quote() {
     }
   };
 
-  // Fetch the quote when the component mounts
   useEffect(() => {
-    fetchQuote();
-  }, []); // Empty dependency array means this runs only once after the initial render
+    fetchQuote(); // Fetch quote when the component mounts
+  }, []);
 
   return (
     <div>

@@ -15,6 +15,7 @@ function Quote() {
       setQuote(data);
     } catch (error) {
       console.error("Error fetching the quote:", error);
+      x;
     }
   };
 
