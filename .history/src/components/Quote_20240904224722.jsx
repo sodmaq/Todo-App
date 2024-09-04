@@ -37,6 +37,8 @@ function Quote() {
         <span className="text-2xl font-semibold">{quote.author}</span>
       </h1>
 
+      <p className="text-lg">-</p>
+
       <button
         onClick={fetchQuote}
         type="button"

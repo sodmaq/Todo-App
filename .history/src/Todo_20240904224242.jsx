@@ -42,12 +42,10 @@ function Todo() {
           deleteTodo={deleteTodo}
           editTodo={editTodo}
         />
-        <div className="mt-4">
-          <NavLink to="/quote">
-            Are you depressed?{" "}
-            <span className="text-blue-500 hover:text-cyan-300">Get Quote</span>{" "}
-          </NavLink>
-        </div>
+        <NavLink to="/quote" cla>
+          {" "}
+          Get Quote
+        </NavLink>
       </div>
     </main>
   );

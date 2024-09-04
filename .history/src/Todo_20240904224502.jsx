@@ -44,8 +44,7 @@ function Todo() {
         />
         <div className="mt-4">
           <NavLink to="/quote">
-            Are you depressed?{" "}
-            <span className="text-blue-500 hover:text-cyan-300">Get Quote</span>{" "}
+            Are you depressed? <span>Get Quote</span>{" "}
           </NavLink>
         </div>
       </div>
