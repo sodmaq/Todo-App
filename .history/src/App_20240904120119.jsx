@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Quote from "./components/Quote";
 import Todo from "./Todo";
+import { Navigate } from "react-router-dom";
 
 function App() {
   return (

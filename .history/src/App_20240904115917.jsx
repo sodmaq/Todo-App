@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Quote from "./components/Quote";
 import Todo from "./Todo";
 
@@ -7,7 +7,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Todo />} />
-        <Route path="quote" element={<Quote />} />
+        <Route path="/quote" element={<Quote />} />
+        {/* Optional redirect if you need it */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
   );

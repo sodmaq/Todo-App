@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Todo />} />
-        <Route path="quote" element={<Quote />} />
+        <Route path="/quote" element={<Quote />} />
       </Routes>
     </BrowserRouter>
   );
