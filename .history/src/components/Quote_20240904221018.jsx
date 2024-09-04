@@ -29,20 +29,16 @@ function Quote() {
   }, []); // Empty dependency array means this runs only once after the initial render
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div>
       {isLoading && <Loader />}
-
-      <h1 className="text-3xl font-bold border p-4">
-        {quote.content}{" "}
-        <span className="text-2xl font-semibold">{quote.author}</span>
+      <h1 className="text-3xl font-bold box-border md:box-content">
+        {quote.content}
       </h1>
-
-      <p className="text-lg">-</p>
-
+      <p className="text-lg">- {quote.author}</p>
       <button
-        onClick={fetchQuote}
+        onClick={fetchQuote} // Fetches a new quote when the button is clicked
         type="button"
-        className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+        className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 "
       >
         Get New Quote
       </button>
