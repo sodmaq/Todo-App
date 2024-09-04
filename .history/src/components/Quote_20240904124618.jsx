@@ -8,7 +8,6 @@ function Quote() {
 
   // Function to fetch a new quote
   const fetchQuote = async () => {
-    setIsLoading(true);
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -18,8 +17,6 @@ function Quote() {
       setQuote(data);
     } catch (error) {
       console.error("Error fetching the quote:", error);
-    } finally {
-      setIsLoading(false);
     }
   };
 
@@ -30,7 +27,6 @@ function Quote() {
 
   return (
     <div>
-      {isLoading && <Loader />}
       <h1 className="text-3xl font-bold">{quote.content}</h1>
       <p className="text-lg">- {quote.author}</p>
       <button
